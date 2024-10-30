@@ -9,12 +9,12 @@ Tekstrakontludo is an Esperanto word which literally means 'A Text Story Game'.
 
 # Running the game
 
-1. Make sure you have Python installed on your system. If not then please refer online sources on how to install Python on your system.
-2. Clone this repository
+1. Make sure you have Python installed on your system. If it's not there then please refer online sources on how to install Python on your system.
+2. Clone this repository.
 ``` sh
 git clone https://github.com/felixity1917/Tekstrakontludo.git
 ```
-3. Execute the following commands
+3. Execute the following commands.
 ``` sh
 cd Tekstrakontludo
 python app.py
