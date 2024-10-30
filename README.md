@@ -19,3 +19,5 @@ git clone https://github.com/felixity1917/Tekstrakontludo.git
 cd Tekstrakontludo
 python app.py
 ```
+
+Alternatively you can test it with any suitable IDE which supports Python.
