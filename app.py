@@ -3,7 +3,7 @@
 # Author: Felixity1917@github
 # This program has been licensed under the clauses of GNU Public License v3.
 # The source code of this program is available at https://github.com/felixity1917/tekstrakontludo
-# Version: 1.0 Stable (2024-10-30)
+# Version: 1.0-1 Stable (2024-11-01)
 
 # VIT Registration Number: 24BCE0981
 
