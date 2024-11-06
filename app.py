@@ -222,16 +222,16 @@ def attack_enemy(player_class_number):
     if enemy_hp <= 0:
         victory_function();
         return;
-    elif player_hp <= 0:
-        death_function();
-        return
-    en_probability_of_hit = 60;
-    if random.randint(1,100) > en_probability_of_hit:
+    enemy_probability_of_hit = 60;
+    if random.randint(1,100) > enemy_probability_of_hit:
         enemy_damage = random.randint(1,20);
         typewriter_effect(f'The enemy deals a damage of {enemy_damage}.');
         player_hp -= enemy_damage;
     else:
         typewriter_effect('The enemy missed.');
+    if player_hp <= 0:
+        death_function();
+        return
     typewriter_effect(f'Your HP: {player_hp}');
     typewriter_effect(f'Enemy\'s HP: {enemy_hp}');
     print();
