@@ -94,7 +94,7 @@ As it's name implies. This function is executed on the player's epic win. It pri
 
 ### `death_function()`
 
-Similar to the `victory_function()`. This function is executed on user death during the combat scene and provides the user a choice to retry by calling the `retry_combat_function()`.
+Similar to the `victory_function()`. This function is executed on user death during the combat scene. It prints a `death_msg` and ends the game.
 
 ## Main Process
 
