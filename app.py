@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Author: Felixity1917@github
+# Author: Felixity1917@github.com
 # This program has been licensed under the clauses of GNU Public License v3.
 # The source code of this program is available at https://github.com/felixity1917/tekstrakontludo
 # Version: 1.0-1 Stable (2024-11-01)
@@ -134,7 +134,7 @@ story_path_3_msg = {
 
 # Function to print text with typewriter effect.
 # Contains switch to modify text with modified center function.
-def typewriter_effect(msg,center_switch=1,delay=0.03):
+def typewriter_effect(msg,center_switch=1,delay=0.01):
     if center_switch == 1:
         msg = center_modified(msg);
     for character in msg:
@@ -222,9 +222,9 @@ def attack_enemy(player_class_number):
     if enemy_hp <= 0:
         victory_function();
         return;
-    enemy_probability_of_hit = 60;
-    if random.randint(1,100) > enemy_probability_of_hit:
-        enemy_damage = random.randint(1,20);
+    enemy_probability_of_hit = 80;
+    if random.randint(1,100) <= enemy_probability_of_hit:
+        enemy_damage = random.randint(1,15);
         typewriter_effect(f'The enemy deals a damage of {enemy_damage}.');
         player_hp -= enemy_damage;
     else:
@@ -366,11 +366,16 @@ def death_function():
         death_msg = {
             0 : 'You fought brave and hard.',
             1 : 'But alas, you\'ve bled too much.',
-            2 : 'Your vision fades and so does your life...'
+            2 : 'Your vision fades and so does your life...',
+            3 : '. . .',
+            4 : 'It seems that you were not worthy enough to be a hero of the realm.',
+            5 : 'We might meet again in a different timeline.',
+            6 : 'Farewell',
+            7 : '.           .            .             .              .',
+            8 : 'Thanks for playing.'
         };
         print_modified(death_msg,0);
-        print();
-        retry_combat_function();
+        exit();
 
 # ------ Main Process ------
 
